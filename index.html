@@ -36,51 +36,67 @@
       </div>
 
       <div class="grid-container">
-        <div class="grid-row" ondrop="drop(event)" ondragover="allowDrop(event)">
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
+        <div class="grid-row">
+          <div class="grid-cell" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <div class="grid-cell" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <div class="grid-cell" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <div class="grid-cell" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
         </div>
         <div class="grid-row">
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
+          <div class="grid-cell" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <div class="grid-cell" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <div class="grid-cell" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <div class="grid-cell" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
         </div>
         <div class="grid-row">
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
+          <div class="grid-cell" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <div class="grid-cell" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <div class="grid-cell" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <div class="grid-cell" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
         </div>
         <div class="grid-row">
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
+          <div class="grid-cell" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <div class="grid-cell" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <div class="grid-cell" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <div class="grid-cell" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
         </div>
-      </div>
-
-      <div class="tile-container">
-
       </div>
     </div>
 
+    <div class="draggable-tile-container">
+      <article class="tile" draggable="true" ondragstart="drag(event)" data-id="2">
+      <article class="tile" draggable="true" ondragstart="drag(event)" data-id="4">
+      <article class="tile" draggable="true" ondragstart="drag(event)" data-id="8">
+      <article class="tile" draggable="true" ondragstart="drag(event)" data-id="16">
+      <article class="tile" draggable="true" ondragstart="drag(event)" data-id="32">
+      <article class="tile" draggable="true" ondragstart="drag(event)" data-id="64">
+      <article class="tile" draggable="true" ondragstart="drag(event)" data-id="128">
+      <article class="tile" draggable="true" ondragstart="drag(event)" data-id="256">
+      <article class="tile" draggable="true" ondragstart="drag(event)" data-id="512">
+      <article class="tile" draggable="true" ondragstart="drag(event)" data-id="1024">
+      <article class="tile" draggable="true" ondragstart="drag(event)" data-id="2048">
+      <article class="tile" draggable="true" ondragstart="drag(event)" data-id="4096">
+      <article class="tile" draggable="true" ondragstart="drag(event)" data-id="8192">
+      <article class="tile" draggable="true" ondragstart="drag(event)" data-id="16384">
+      <article class="tile" draggable="true" ondragstart="drag(event)" data-id="32768">
+      <article class="tile" draggable="true" ondragstart="drag(event)" data-id="65536">
+      <article class="tile" draggable="true" ondragstart="drag(event)" data-id="131072">
+    </div>
+
     <p class="game-explanation">
-      <strong class="important">How to play:</strong> Use your <strong>arrow keys</strong> to move the tiles. When two tiles with the same number touch, they <strong>merge into one!</strong>
+      <strong class="important">How to play:</strong> Use your <strong>arrow keys, WASD or HJKL</strong> to move the tiles. When two tiles with the same number touch, they <strong>merge into one!</strong>
     </p>
     <hr>
     <p>
-    <strong class="important">Note:</strong> This site is the official version of 2048. You can play it on your phone via <a href="http://git.io/2048">http://git.io/2048.</a> All other apps or sites are derivatives or fakes, and should be used with caution.
+    This is a playground for 2048, intended as an easier-to-use version of <a href="https://www.scotttorborg.com/2048/#0000000000000000" target="_blank">Scott Torborg's 2048 boardstate practice site</a>. Made to work with <a href="https://2048-league.github.io/" target="_blank">2048 League</a>
     </p>
     <hr>
     <p>
-    Created by <a href="http://gabrielecirulli.com" target="_blank">Gabriele Cirulli.</a> Based on <a href="https://itunes.apple.com/us/app/1024!/id823499224" target="_blank">1024 by Veewo Studio</a> and conceptually similar to <a href="http://asherv.com/threes/" target="_blank">Threes by Asher Vollmer.</a>
+    Made by <a href="https://github.com/YummyUranium" target="_blank">YummyUranium</a>. Base design made by <a href="http://gabrielecirulli.com/" target="_blank">Gabriele Cirulli</a> Based on <a href="https://itunes.apple.com/us/app/1024!/id823499224" target="_blank">1024 by Veewo Studio</a> and conceptually similar to <a href="http://asherv.com/threes/" target="_blank">Threes by Asher Vollmer.</a>
     </p>
   </div>
 
-<script src="js/drag-n-drop.js"></script>
+  <script src="js/drag-n-drop.js"></script>
   <script src="js/bind_polyfill.js"></script>
   <script src="js/classlist_polyfill.js"></script>
   <script src="js/animframe_polyfill.js"></script>
