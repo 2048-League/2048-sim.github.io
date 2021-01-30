@@ -334,6 +334,18 @@ hr {
   z-index: 3;
 }
 
+.column {
+    transition: all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+.column.drop {
+    border: 2px dashed #FFF;
+}
+
+.column.drop article {
+    pointer-events: none;
+}
+
 .tile {
   position: absolute;
   -webkit-transition: 100ms ease-in-out;
