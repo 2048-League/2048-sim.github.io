@@ -313,6 +313,13 @@ hr {
   -ms-transform: translate(363px, 363px);
   transform: translate(363px, 363px); }
 
+.draggable-tile-grabber {
+  
+}
+.drag-tile {
+  z-index: 3;
+}
+
 .tile {
   position: absolute;
   -webkit-transition: 100ms ease-in-out;
