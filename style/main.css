@@ -313,9 +313,14 @@ hr {
   -ms-transform: translate(363px, 363px);
   transform: translate(363px, 363px); }
 
-.draggable-tile-grabber {
-  
+.tile {
+    cursor: grab;
 }
+
+.tile:active {
+    cursor: grabbing;
+}
+
 .drag-tile {
   z-index: 3;
 }
