@@ -321,6 +321,15 @@ hr {
     cursor: grabbing;
 }
 
+.tile {
+    transition: all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+.tile.dragging {
+    opacity: .5;
+    transform: scale(.8);
+}
+
 .drag-tile {
   z-index: 3;
 }
