@@ -326,20 +326,20 @@ hr {
 }
 
 .tile.dragging {
-    opacity: .5;
+    opacity: 1;
     transform: scale(.8);
 }
 
 
-.column {
+.tile.grid-cell {
     transition: all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
 }
 
-.column.drop {
+.tile.grid-cell.drop {
     border: 2px dashed #000;
 }
 
-.column.drop article {
+.tile.grid-cell.drop article {
     pointer-events: none;
 }
 
