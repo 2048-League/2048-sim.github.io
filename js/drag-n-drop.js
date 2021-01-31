@@ -23,14 +23,14 @@ const dragLeave = event => {
     event.currentTarget.classList.remove('drop');
 };
 
-Array.from(document.querySelectorAll('.column')).forEach(column => {
-    column.addEventListener('dragenter', dragEnter);
-    column.addEventListener('dragleave', dragLeave);
+Array.from(document.querySelectorAll('.tile.grid-cell')).forEach(tile.grid-cell => {
+    tile.grid-cell.addEventListener('dragenter', dragEnter);
+    tile.grid-cell.addEventListener('dragleave', dragLeave);
 });
 
 const drop = event => {
-    Array.from(document.querySelectorAll('.column'))
-         .forEach(column => column.classList.remove('drop'));
+    Array.from(document.querySelectorAll('.tile.grid-cell'))
+         .forEach(tile.grid-cell => tile.grid-cell.classList.remove('drop'));
 
     document.querySelector(`[data-id="${event.dataTransfer.getData('text/plain')}"]`).remove();
 
