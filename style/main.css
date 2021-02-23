@@ -214,14 +214,14 @@ hr {
     display: block;
     clear: both; }
 
-.grid-cell {
+.tile.grid-cell {
   width: 106.25px;
   height: 106.25px;
   margin-right: 15px;
   float: left;
   border-radius: 3px;
   background: rgba(238, 228, 218, 0.35); }
-  .grid-cell:last-child {
+  .tile.grid-cell:last-child {
     margin-right: 0; }
 
 .tile-container {
@@ -326,23 +326,20 @@ hr {
 }
 
 .tile.dragging {
-    opacity: .5;
+    opacity: 1;
     transform: scale(.8);
 }
 
-.drag-tile {
-  z-index: 3;
-}
 
-.column {
+.tile.grid-cell {
     transition: all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
 }
 
-.column.drop {
-    border: 2px dashed #FFF;
+.tile.grid-cell.drop {
+    border: 2px dashed #000;
 }
 
-.column.drop article {
+.tile.grid-cell.drop article {
     pointer-events: none;
 }
 
@@ -680,14 +677,14 @@ hr {
       display: block;
       clear: both; }
 
-  .grid-cell {
+  .tile.grid-cell {
     width: 57.5px;
     height: 57.5px;
     margin-right: 10px;
     float: left;
     border-radius: 3px;
     background: rgba(238, 228, 218, 0.35); }
-    .grid-cell:last-child {
+    .tile.grid-cell:last-child {
       margin-right: 0; }
 
   .tile-container {
